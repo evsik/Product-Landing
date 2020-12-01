@@ -49,11 +49,42 @@ header {
     line-height: 36px;
 }
 
+
 .product-image-block{}
 
 .product-image{
     width: 100%;
 }
+
+main{}
+
+.about-product-block{
+    display: flex;
+}
+
+.about-product-section{
+    margin-right: 8%;
+}
+
+.about-product-head{
+    margin-bottom: 3%;
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.about-product-text{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about-product-image-block{}
+
+.about-product-image{}
+
 
 
 
