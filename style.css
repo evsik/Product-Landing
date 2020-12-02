@@ -69,7 +69,9 @@ main {
     margin-right: 8%;
 }
 
-.about-product-head, .pluses-product-head, .screenshots-product-head, .reviews-product-head, .subscription-product-head {
+.about-product-head, .pluses-product-head, .screenshots-product-head, .reviews-product-head,
+.subscription-product-head,
+.footer-head {
     margin-bottom: 3%;
     color: #445161;
     font-size: 30px;
@@ -216,20 +218,21 @@ main {
     margin-top: 1%;
 }
 
-.subscription-product-block{}
+.subscription-product-block {
+}
 
-.subscription-product-block ul{
+.subscription-product-block ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.subscription-product-head{
+.subscription-product-head {
     text-align: center;
 }
 
-.subscription-product-list{
+.subscription-product-list {
     padding: 1%;
     background-color: #445162;
     width: 30%;
@@ -237,7 +240,7 @@ main {
 
 }
 
-.subscription-product-list-head{
+.subscription-product-list-head {
     margin-bottom: 2%;
     color: #ffffff;
     font-size: 24px;
@@ -245,7 +248,7 @@ main {
     line-height: 30px;
 }
 
-.subscription-product-list-price{
+.subscription-product-list-price {
     padding: 4% 0 4% 0;
     color: #445162;
     font-size: 40px;
@@ -254,7 +257,7 @@ main {
     background-color: #ffffff;
 }
 
-.subscription-product-list-option{
+.subscription-product-list-option {
     padding: 4% 0 4% 0;
     color: #ffffff;
     font-size: 14px;
@@ -296,19 +299,138 @@ main {
         width: 100%;
     }
 
-    .subscription-product-block ul{
+    .subscription-product-block ul {
         flex-direction: column;
         align-items: center;
     }
 
-    .subscription-product-list{
+    .subscription-product-list {
         width: 50%;
     }
 
-    .subscription-product-list:nth-child(-n+2){
+    .subscription-product-list:nth-child(-n+2) {
         margin-bottom: 5%;
     }
 }
+
+footer {
+    background-color: #445162;
+    flex: 0 0 auto;
+    padding: 4% 0 0 0;
+}
+
+
+.footer-head {
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    padding: 0 4% 4% 4%;
+}
+
+.footer-form-block {
+    text-align: center;
+    margin-right: 5%;
+}
+
+.footer-form {
+}
+
+.input-name, .input-email, .input-text {
+    width: 500px;
+    height: 40px;
+    padding-left: 2%;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin-bottom: 4%;
+}
+
+.input-email {
+}
+
+.input-text {
+    height: 170px;
+    padding-bottom: 125px;
+}
+
+.input-submit {
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 140px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.footer-address {
+}
+
+.address-ul {
+    list-style-type: none;
+}
+
+.address-list {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.fa-skype {
+}
+
+.fa-telegram-plane {
+}
+
+.fa-at {
+}
+
+.fa-phone {
+}
+
+.address-list-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.address-social-ul {
+    margin-top: 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-social-list {
+}
+
+.social-icons {
+    color: #ffffff;
+    margin-right: 3%;
+    font-size: 22px;
+}
+
+.fa-twitter-square, .fa-facebook-square, .fa-linkedin, .fa-google-plus-square, .fa-youtube-square {
+    font-size: 35px;
+}
+
+.copyright-block {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1%;
+}
+
+.copyright-text {
+    color: #445162;
+}
+
 
 @media screen and (max-width: 768px) {
     .about-product-block {
@@ -317,6 +439,27 @@ main {
 
     .about-product-image, .product-image {
         width: 100%;
+    }
+
+    .footer-form-block {
+        margin-right: 0;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .input-name, .input-email, .input-text {
+        width: 100%;
+    }
+
+    .footer-address {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+
+    .address-ul, .address-social-ul {
+        flex: 1 1 auto;
     }
 }
 
@@ -347,7 +490,7 @@ main {
         margin: 0;
     }
 
-    .subscription-product-list{
+    .subscription-product-list {
         width: 100%;
     }
 }
