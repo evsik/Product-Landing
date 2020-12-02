@@ -70,7 +70,7 @@ main {
     margin-right: 8%;
 }
 
-.about-product-head, .pluses-product-head, .screenshots-product-head {
+.about-product-head, .pluses-product-head, .screenshots-product-head, .reviews-product-head {
     margin-bottom: 3%;
     color: #445161;
     font-size: 30px;
@@ -128,7 +128,7 @@ main {
     text-align: center;
 }
 
-.screenshots-product-wrapper{
+.screenshots-product-wrapper {
     justify-content: space-between;
     flex-flow: wrap;
     display: flex;
@@ -157,14 +157,84 @@ main {
     overflow: hidden;
 }
 
+.reviews-product-block {
+    background-color: #f5f5f5;
+}
+
+.reviews-product-block ul {
+    display: flex;
+    list-style-type: none;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.reviews-product-head {
+    text-align: center;
+}
+
+.reviews-product-list {
+    width: 49%;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.reviews-product-avatar {
+    margin-right: 5%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #445161;
+}
+
+.reviews-product-text {
+    margin-bottom: 1px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 18px;
+    display: inline-block;
+    background-color: #ebebeb;
+    padding: 1%;
+    width: 84%;
+    position: relative;
+}
+
+.reviews-product-text::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    bottom: 54px;
+    border: 14px solid transparent;
+    border-right: 14px solid #ebebeb;
+}
+
+.reviews-product-text span {
+    display: inline-block;
+    color: #989898;
+    font-style: normal;
+    margin-top: 1%;
+}
+
 
 @media screen and (max-width: 992px) {
+    .reviews-product-list {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 576px) {
+    .reviews-product-list {
+        display: inline-block;
+        text-align: -webkit-center;
+    }
+
+    .reviews-product-avatar {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 350px) {
