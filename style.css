@@ -1,3 +1,8 @@
+:root {
+    --main-color: #445161;
+    --white-color: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +31,7 @@ body {
 
 header {
     flex: 0 0 auto;
-    background-color: #445162;
+    background-color: var(--main-color);
     display: flex;
     justify-content: space-between;
 }
@@ -38,14 +43,14 @@ header {
 .product-name {
     margin-bottom: 5%;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 60px;
     font-weight: 400;
 }
 
 .product-describe {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
@@ -74,7 +79,7 @@ main {
 .subscription-product-head,
 .footer-head {
     margin-bottom: 3%;
-    color: #445161;
+    color: var(--main-color);
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -150,7 +155,7 @@ main {
 .screenshots-product-section-head {
     margin-bottom: 1%;
     overflow: hidden;
-    color: #445161;
+    color: var(--main-color);
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -186,7 +191,7 @@ main {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: #445161;
+    background-color: var(--main-color);
 }
 
 .reviews-product-text {
@@ -237,7 +242,7 @@ main {
 
 .subscription-product-list {
     padding: 1%;
-    background-color: #445162;
+    background-color: var(--main-color);
     width: 30%;
     text-align: center;
 
@@ -245,7 +250,7 @@ main {
 
 .subscription-product-list-head {
     margin-bottom: 2%;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -253,16 +258,16 @@ main {
 
 .subscription-product-list-price {
     padding: 4% 0 4% 0;
-    color: #445162;
+    color: var(--main-color);
     font-size: 40px;
     font-weight: 400;
     line-height: 30px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 
 .subscription-product-list-option {
     padding: 4% 0 4% 0;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -272,14 +277,14 @@ main {
 .button {
     border-radius: 5px;
     display: inline-block;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     width: 100%;
     height: 40px;
     line-height: 40px;
     text-decoration: none;
     outline: none;
     border: none;
-    color: #445161;
+    color: var(--main-color);
     font-size: 18px;
     font-weight: 400;
 }
@@ -317,14 +322,14 @@ main {
 }
 
 footer {
-    background-color: #445162;
+    background-color: var(--main-color);
     flex: 0 0 auto;
     padding: 4% 0 0 0;
 }
 
 
 .footer-head {
-    color: #ffffff;
+    color: var(--white-color);
     text-align: center;
 }
 
@@ -362,13 +367,13 @@ footer {
 }
 
 .input-submit {
-    color: #445162;
+    color: var(--main-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     width: 140px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     border-radius: 8px;
     cursor: pointer;
     outline: none;
@@ -407,7 +412,7 @@ footer {
 }
 
 .address-list-text {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -425,7 +430,7 @@ footer {
 }
 
 .social-icons {
-    color: #ffffff;
+    color: var(--white-color);
     margin-right: 3%;
     font-size: 22px;
 }
@@ -441,12 +446,12 @@ footer {
 
 .copyright-block {
     text-align: center;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     padding: 1%;
 }
 
 .copyright-text {
-    color: #445162;
+    color: var(--main-color);
 }
 
 
@@ -505,11 +510,16 @@ footer {
     }
 
     .reviews-product-avatar {
-        margin: 0;
+        margin: 0 0 20px 0;
     }
 
     .subscription-product-list {
         width: 100%;
+    }
+
+    .reviews-product-text::before {
+        top: -10px;
+        left: calc(50% - 8px);
     }
 }
 
