@@ -198,7 +198,7 @@ main {
     line-height: 18px;
     display: inline-block;
     background-color: #ebebeb;
-    padding: 1%;
+    padding: 2%;
     width: 84%;
     position: relative;
 }
@@ -206,10 +206,12 @@ main {
 .reviews-product-text::before {
     content: '';
     position: absolute;
-    left: -28px;
-    bottom: 54px;
-    border: 14px solid transparent;
-    border-right: 14px solid #ebebeb;
+    left: -9px;
+    top: 30px;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    background-color: #ebebeb;
 }
 
 .reviews-product-text span {
