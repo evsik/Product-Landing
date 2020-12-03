@@ -59,6 +59,7 @@ header {
 }
 
 main {
+    flex: 1 0 auto;
 }
 
 .about-product-block {
@@ -367,6 +368,16 @@ footer {
     height: 40px;
     background-color: #ffffff;
     border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.input-submit:hover, .button:hover {
+    opacity: 0.7;
+}
+
+.input-submit:active, .button:active {
+    opacity: 0.5;
 }
 
 .footer-address {
@@ -419,6 +430,11 @@ footer {
 
 .fa-twitter-square, .fa-facebook-square, .fa-linkedin, .fa-google-plus-square, .fa-youtube-square {
     font-size: 35px;
+}
+
+.fa-twitter-square:hover, .fa-facebook-square:hover, .fa-linkedin:hover, .fa-google-plus-square:hover,
+.fa-youtube-square:hover {
+    opacity: 0.7;
 }
 
 .copyright-block {
