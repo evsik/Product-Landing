@@ -518,8 +518,8 @@ footer {
     }
 
     .reviews-product-text::before {
-        top: -10px;
-        left: calc(50% - 8px);
+        top: -9px;
+        left: calc(50% - 9px);
     }
 }
 
