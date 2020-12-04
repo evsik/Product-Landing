@@ -61,6 +61,7 @@ header {
 }
 
 .product-image {
+    max-width: 469px;
 }
 
 main {
@@ -97,6 +98,7 @@ main {
 }
 
 .about-product-image {
+    max-width: 430px;
 }
 
 .pluses-product-block {
@@ -150,6 +152,10 @@ main {
 .screenshots-product-image {
     float: left;
     margin-right: 2%;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .screenshots-product-section-head {
@@ -191,7 +197,9 @@ main {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: var(--main-color);
+    /*background-color: var(--main-color);*/
+    background: url("images/avatar.jpg") no-repeat;
+    background-size: cover;
 }
 
 .reviews-product-text {
@@ -287,38 +295,6 @@ main {
     color: var(--main-color);
     font-size: 18px;
     font-weight: 400;
-}
-
-
-@media screen and (max-width: 992px) {
-    header {
-        display: inline-block;
-    }
-
-    .product-header-block {
-        margin: 0;
-    }
-
-    .screenshots-product-section {
-        width: 100%;
-    }
-
-    .reviews-product-list {
-        width: 100%;
-    }
-
-    .subscription-product-block ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .subscription-product-list {
-        width: 50%;
-    }
-
-    .subscription-product-list:nth-child(-n+2) {
-        margin-bottom: 5%;
-    }
 }
 
 footer {
@@ -454,14 +430,48 @@ footer {
     color: var(--main-color);
 }
 
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+    }
+
+    .product-header-block {
+        margin: 0;
+    }
+
+    .screenshots-product-section {
+        width: 100%;
+    }
+
+    .reviews-product-list {
+        width: 100%;
+    }
+
+    .subscription-product-block ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-product-list {
+        width: 50%;
+    }
+
+    .subscription-product-list:nth-child(-n+2) {
+        margin-bottom: 5%;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .about-product-block {
         display: inline-block;
     }
 
-    .about-product-image, .product-image {
-        width: 100%;
+    .about-product-image {
+        max-width: 100%;
     }
 
     .footer-form-block {
