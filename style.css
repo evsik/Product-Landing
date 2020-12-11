@@ -128,12 +128,6 @@ main {
     margin-top: 3px;
 }
 
-.pluses-product-text {
-}
-
-.screenshots-product-block {
-}
-
 .screenshots-product-head {
     text-align: center;
 }
@@ -197,7 +191,6 @@ main {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    /*background-color: var(--main-color);*/
     background: url("images/avatar.jpg") no-repeat;
     background-size: cover;
 }
@@ -232,9 +225,6 @@ main {
     color: #989898;
     font-style: normal;
     margin-top: 1%;
-}
-
-.subscription-product-block {
 }
 
 .subscription-product-block ul {
@@ -321,9 +311,6 @@ footer {
     margin-right: 5%;
 }
 
-.footer-form {
-}
-
 .input-name, .input-email, .input-text {
     width: 500px;
     height: 40px;
@@ -332,9 +319,6 @@ footer {
     outline: none;
     border: none;
     margin-bottom: 4%;
-}
-
-.input-email {
 }
 
 .input-text {
@@ -363,9 +347,6 @@ footer {
     opacity: 0.5;
 }
 
-.footer-address {
-}
-
 .address-ul {
     list-style-type: none;
 }
@@ -373,18 +354,6 @@ footer {
 .address-list {
     display: flex;
     margin-bottom: 10px;
-}
-
-.fa-skype {
-}
-
-.fa-telegram-plane {
-}
-
-.fa-at {
-}
-
-.fa-phone {
 }
 
 .address-list-text {
@@ -402,8 +371,6 @@ footer {
     justify-content: space-between;
 }
 
-.address-social-list {
-}
 
 .social-icons {
     color: var(--white-color);
@@ -532,8 +499,3 @@ footer {
         left: calc(50% - 9px);
     }
 }
-
-@media screen and (max-width: 350px) {
-}
-
-
