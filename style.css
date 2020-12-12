@@ -482,6 +482,7 @@ footer {
     }
 
     .reviews-product-list {
+        text-align: -moz-center;
         display: inline-block;
         text-align: -webkit-center;
     }
