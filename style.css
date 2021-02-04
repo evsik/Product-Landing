@@ -191,7 +191,7 @@ main {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background: url("images/avatar.jpg") no-repeat;
+    background: url("multimedia/avatar.jpg") no-repeat;
     background-size: cover;
 }
 
